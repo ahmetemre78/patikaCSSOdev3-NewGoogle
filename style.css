@@ -1,0 +1,113 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#nav
+{
+    margin: 10px 20px;
+}
+
+#nav ul li, #footer ul li 
+{
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
+#nav ul li a,#footer ul li a
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+#nav ul li a:hover,#footer ul li a:hover
+{
+   text-decoration: underline;
+   cursor: pointer; 
+}
+
+#nav #rightNav, #footer #rightFooter
+{
+    position: absolute;
+    right: 0;
+    top: 20;
+}
+
+#nav #rightNav ul li a:hover
+{
+    opacity: 0.7;
+}
+
+#userImage
+{
+    margin-top: -5px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+#centerArea
+{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+}
+#centerArea #searchArea
+{
+    margin-top: 10px;
+}
+#centerArea #searchArea input
+{
+    padding: 10px;
+    width: 55%;
+    border-radius: 30px;
+    border:1px solid gray
+}
+
+
+#centerArea #searchButtons
+{
+    margin-top: 10px;
+}
+
+#centerArea #searchButtons #btnSubmit
+{
+    margin: 0 auto;
+}
+
+#centerArea #searchButtons input
+{
+    padding: 12px;
+    margin:10px 0 ;
+    background: #f2f2f2;
+    border: 0;
+    border-radius: 5px;
+}
+#centerArea #searchButtons input:hover
+{
+    cursor: pointer;
+    border: 1px solid #c6c6c6;
+}
+
+#footer
+{
+    position: fixed;
+    bottom: 0;
+    background: #f2f2f2;
+    width: 100%;
+    padding:15px;
+    border-top: 1px solid rgba(0,0,0, 0.2);
+}
